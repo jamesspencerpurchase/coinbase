@@ -262,6 +262,10 @@
             loadiFrame('https://www.coinbase.com/wallet');
             console.log("nav_wallet")
         }
+	    else if (e.data.action === "nav_derivatives") {
+            loadiFrame('https://www.coinbase.com/derivatives');
+            console.log("nav_derivatives")
+        }
     }
 
     function sendMessage(data) {
