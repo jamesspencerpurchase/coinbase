@@ -254,15 +254,15 @@
         if (e.origin !== 'https://amelia.ipsoft.com')
             return;
 
-        if (e.data.action === "Divorce") {
+        if (e.data.action == "Divorce") {
             loadiFrame('https://www.calpers.ca.gov/page/life-events/marriage-divorce');
             console.log("Divorce")
         }
-		else if (e.data.action === "nav_wallet") {
+		else if (e.data.action == "nav_wallet") {
             loadiFrame('https://www.coinbase.com/wallet');
             console.log("nav_wallet")
         }
-	    else if (e.data.action === "nav_derivatives") {
+	    else if (e.data.action == "nav_derivatives") {
             loadiFrame('https://www.coinbase.com/derivatives');
             console.log("nav_derivatives")
         }
