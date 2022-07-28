@@ -251,18 +251,18 @@
             // Check to make sure that this message came from the correct domain.
 
         var url = e.data.url;
-        if (e.origin !== 'https://amelia.ipsoft.com')
+        if (e.origin !== 'https://nice.dev.amelia.com')
             return;
 
-        if (e.data.action == "Divorce") {
-            loadiFrame('https://www.calpers.ca.gov/page/life-events/marriage-divorce');
-            console.log("Divorce")
+        if (e.data.action === "nav_rewards") {
+            loadiFrame('https://www.coinbase.com/rewards');
+            console.log("nav_rewards")
         }
-		else if (e.data.action == "nav_wallet") {
+		else if (e.data.action === "nav_wallet") {
             loadiFrame('https://www.coinbase.com/wallet');
             console.log("nav_wallet")
         }
-	    else if (e.data.action == "nav_derivatives") {
+	    else if (e.data.action === "nav_derivatives") {
             loadiFrame('https://www.coinbase.com/derivatives');
             console.log("nav_derivatives")
         }
